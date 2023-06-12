@@ -48,7 +48,6 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
 }
 
 /* tablet */
@@ -70,8 +69,12 @@ img {
 /* section header */
 
 .header {
-  background-color: chartreuse;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding-top: 19px;
+  margin-bottom: 37px;
 }
 
 .header .container {
@@ -113,27 +116,92 @@ img {
   padding: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 36px;
+  }
 
-/* tablet header  */
+  .header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav__list {
+    margin-bottom: 0;
+  }
+}
+
+/* hero section */
+
+.hero__section {
+  background-image: url(../img/hero/mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  text-align: center;
+  padding-top: 214px;
+  padding-bottom: 138px;
+}
+
+.hero__title {
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.hero__subtitle {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  margin-bottom: 17px;
+}
+
+.hero__btn {
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  background-color: #ff4e50;
+  border: none;
+  border-radius: 50px;
+  padding: 13px 38px;
+}
+
 
 @media screen and (min-width: 768px) {
-    .header {
-        padding-top: 36px;
-    }
+  .hero__section {
+    background-image: url(../img/hero/tablet.jpg);
 
-    .header .container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-    
-    .nav__list {
-        margin-bottom: 0;
-        
-    }
-    .nav__list__item {
-    }
-    .nav__btn {
-    }
+    padding-top: 201px;
+    padding-bottom: 233px;
+  }
+
+  .hero__title {
+    font-size: 52px;
+    line-height: 63px;
+    margin-bottom: 36px;
+  }
+
+  .hero__subtitle {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 33px;
+  }
+
+  .hero__btn {
+    padding: 13px 11px;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .hero__section {
+    background-image: url(../img/hero/desktop.jpg);
+  }
 }
