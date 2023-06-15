@@ -1,0 +1,42 @@
+// hero
+
+.hero__section {
+    background-image: url(../img/hero/mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+    text-align: center;
+    padding-top: 214px;
+    padding-bottom: 138px;
+  
+    @media screen and (min-width: 768px) {
+      background-image: url(../img/hero/tablet.jpg);
+  
+      padding-top: 201px;
+      padding-bottom: 233px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      background-image: url(../img/hero/desktop.jpg);
+    }
+  }
+
+
+//   partner
+
+  .partner__section {
+    padding-top: 67px;
+    padding-bottom: 56px;
+    text-align: center;
+  
+    @media screen and (min-width: 768px) {
+      padding-top: 71px;
+      padding-bottom: 39px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+        padding-top: 69px;
+        padding-bottom: 72px;
+  }
+  }
