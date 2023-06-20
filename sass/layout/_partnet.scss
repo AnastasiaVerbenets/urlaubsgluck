@@ -1,7 +1,7 @@
 .partner__title {
   font-size: 22px;
   line-height: 27px;
-  color: #333333;
+  color: $titleColor;
   margin-bottom: 14px;
 
   @media screen and (min-width: 768px) {
@@ -12,8 +12,8 @@
 .partner__list {
   @media screen and (min-width: 768px) {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 50px;
   }
 
@@ -60,9 +60,7 @@
   height: 35px;
   border-radius: 50%;
   border: 4px solid #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex;
 }
 
 .icon__bcg--red {
@@ -84,7 +82,7 @@
 .partner__name {
   font-size: 14px;
   line-height: 17px;
-  color: #333333;
+  color: $titleColor;
   margin-bottom: 13px;
 }
 
@@ -93,5 +91,5 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
-  color: #666666;
+  color: $partnersTextColor;
 }
